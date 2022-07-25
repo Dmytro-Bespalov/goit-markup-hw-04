@@ -119,11 +119,20 @@ img {
     letter-spacing: 0.02em;
     color: var(--secondary-text-color);
     text-decoration: none;
+    justify-content: center;
 }
 
 
 .contacts-item:not(:last-child) {
     margin-right: 50px;
+}
+
+.contacts-item-box {
+    display: flex;
+}
+
+.contacts-link > .icon {
+    fill: currentColor;
 }
 
 .contacts {
@@ -146,9 +155,22 @@ color: var(--accent-color);
 }
 
 .hero-section {
-    background-color: #2F303A;
+    background-color: rgba(47, 48, 58, 0.4);;
     padding-top: 200px;
     padding-bottom: 200px;
+}
+
+.overlay {
+    max-width: 1600;
+    min-height: 600;
+    margin-left: auto;
+    margin-right: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: linear-gradient(
+    to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/hero.jpg)
 }
 
 .hero {
@@ -196,6 +218,14 @@ margin-top: 40px;
 
 .benefits-item:not(:last-child) {
     margin-right: 30px;
+}
+
+.benefits-item-block {
+    display: flex;
+    background-color: #F5F4FA;
+    flex-basis: 120;
+    border-radius: 4px;
+    justify-content: center;
 }
 
 .benefits-title {
@@ -284,6 +314,54 @@ margin-top: 40px;
     letter-spacing: 0.03em;
     color: var(--secondary-text-color);
     margin-top: 10px;
+}
+
+.social-list {
+    display: flex;
+    padding-left: 32;
+    padding-right: 32;
+    padding-top: 16;
+    padding-bottom: 30;
+}
+
+
+
+.customers {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color)
+}
+
+.customers-list {
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    justify-content: center;
+}
+
+.customers-item {
+    display: flex;
+    width: 170px;
+    height: 92px;
+    left: 215px;
+    top: 2493px;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+}
+
+.customers-link {
+    cursor: pointer;
+}
+
+.customers-link > .icon {
+    fill: #AFB1B8;
+}
+
+.customers-item:not(:last-child) {
+    margin-right: 30;
 }
 
 /* ==================ФУТЕР================= */

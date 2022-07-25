@@ -31,16 +31,28 @@
         </nav>
             <ul class="list contacts">
                 <li class="contacts-item">
-                    <a class="contacts-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                    <div class="contacts-item-box">
+                    <a class="contacts-link" href="mailto:info@devstudio.com">
+                        <svg class="icon" width="16" height="12">
+                            <use href="./images/sprite.svg#icon-envelope"></use>
+                        </svg>
+                    info@devstudio.com</a>
+                    </div>
                 </li>
                 <li class="contacts-item">
-                    <a class="contacts-link" href="tel:+380961111111">+38 096 111 11 11</a>
+                <div class="contacts-item-box">
+                    <a class="contacts-link" href="tel:+380961111111">
+                        <svg class="icon" width="10" height="16">
+                            <use href="./images/sprite.svg#icon-smartphone"></use>
+                        </svg>
+                        +38 096 111 11 11</a>
+                </div>
                 </li>
             </ul>
         </div>
     </header>
     <main>
-        <section class="hero-section">
+        <section class="hero-section overlay">
             <div class="container">
             <h1 class="hero">Эффективные решения <br/> для вашего бизнеса</h1>
             <button type="button" class="hero-button">Заказать услугу</button>
@@ -50,18 +62,38 @@
             <h2 hidden>Наши преимущества</h2>
             <ul class="list benefits">
                 <li class="benefits-item">
+                    <div class="benefits-item-block">
+                    <svg class="icon" width="65" height="70">
+                        <use href="./images/sprite.svg#icon-antenna"></use>
+                    </svg>
+                    </div>
                     <h3 class="benefits-title">Внимание к деталям</h3>
                     <p class="benefits-text">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
                 </li>
                 <li class="benefits-item">
+                    <div class="benefits-item-block">
+                    <svg width="67" height="70">
+                        <use href="./images/sprite.svg#icon-clock"></use>
+                    </svg>
+                    </div>
                     <h3 class="benefits-title">Пунктуальность</h3>
                     <p class="benefits-text">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
                 </li>
                 <li class="benefits-item">
+                    <div class="benefits-item-block">
+                    <svg class="icon" width="70" height="54">
+                        <use href="./images/sprite.svg#icon-diagram"></use>
+                    </svg>
+                    </div>
                     <h3 class="benefits-title">Планирование</h3>
                     <p class="benefits-text">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
                 </li>
                 <li class="benefits-item">
+                    <div class="benefits-item-block">
+                    <svg width="55" height="61">
+                        <use href="./images/sprite.svg#icon-astronaut"></use>
+                    </svg>
+                    </div>
                     <h3 class="benefits-title">Современные технологии</h3>
                     <p class="benefits-text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
                 </li>
@@ -92,6 +124,24 @@
                     <img src="./images/employee1.jpg" alt="Игорь Демьяненко" width="270" height="260"/>
                     <h3 class="team-name">Игорь Демьяненко</h3>
                     <p class="team-position" lang="en">Product Designer</p>
+                    <ul class="list social-list">
+                        <li>
+                            <a href="">
+                                <svg width="20" height="20">
+                                    <use href="./images/sprite.svg#icon-instagram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <svg width="20" height="20">
+                                    <use href="./images/sprite.svg#icon-twitter"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social-list-item"></li>
+                        <li class="social-list-item"></li>
+                    </ul>
                 </li>
                 <li class="team-item">
                     <img src="./images/employee2.jpg" alt="Ольга Репина" width="270" height="260"/>
@@ -110,6 +160,67 @@
                 </li>
             </ul>
         </div>
+        </section>
+        <section class="section">
+            <div class="container">
+            <h2 class="customers">Постоянные клиенты</h2>
+            <ul class="list customers-list">
+                <li>
+                    <div class="customers-item">
+                        <a class="customers-link">
+                            <svg class="icon" width="106" height="60">
+                                <use href="./images/sprite.svg#icon-client-one"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </li>
+                <li> 
+                    <div class="customers-item">
+                        <a class="customers-link">
+                            <svg class="icon" width="106" height="60">
+                                <use href="./images/sprite.svg#icon-client-two"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="customers-item">
+                        <a class="customers-link">
+                            <svg class="icon" width="106" height="60">
+                                <use href="./images/sprite.svg#icon-client-three"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="customers-item">
+                        <a class="customers-link">
+                            <svg class="icon" width="106" height="60">
+                                <use href="./images/sprite.svg#icon-client-four"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="customers-item">
+                        <a class="customers-link">
+                            <svg class="icon" width="106" height="60">
+                                <use href="./images/sprite.svg#icon-client-five"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="customers-item">
+                        <a class="customers-link">
+                            <svg class="icon" width="106" height="60">
+                                <use href="./images/sprite.svg#icon-client-six"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+            </div>
         </section>
     </main>
     <footer class="footer">
