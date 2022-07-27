@@ -118,7 +118,6 @@ img {
     letter-spacing: 0.02em;
     color: var(--secondary-text-color);
     text-decoration: none;
-    justify-content: center;
 }
 
 
@@ -132,6 +131,16 @@ img {
 
 .contacts-link > .icon {
     fill: currentColor;
+}
+
+.contacts-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contacts-link>.icon {
+    margin-right: 10px;
 }
 
 .contacts {
@@ -533,9 +542,6 @@ margin-top: 40px;
     padding-bottom: 6px;
     padding-right: 22px;
     padding-left: 22px;
-}
-
-.portfolio-nav-button-text {
     font-family: roboto, sans-serif;
     font-weight: 500;
     font-size: 16px;
@@ -545,11 +551,11 @@ margin-top: 40px;
     color: var(--primary-text-color);
 }
 
-.portfolio-nav-button-text:hover {
+.portfolio-nav-button:hover {
     color: #FFFFFF;
 }
 
-.portfolio-nav-button-text:focus {
+.portfolio-nav-button:focus {
     color: #FFFFFF;
 }
 
